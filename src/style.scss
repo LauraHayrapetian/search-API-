@@ -1,0 +1,63 @@
+$color-white: rgba(245, 245, 245, 0.255);
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    /* background-color: #fafafa; */
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/685/872/907/blue-textured-wallpaper-thumb.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.forTitle {
+    text-align: center;
+
+    h2 {
+        color: #fff;
+        font-family: serif;
+        font-weight: bolder;
+    }
+}
+
+.forSearch {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    gap: 10px
+}
+
+.forImages {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    background-color: $color-white;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    div {
+        img {
+            border-radius: 10px;
+            width: 350px;
+            height: 350px;
+
+            &:hover {
+                transition: 0.5;
+
+            }
+        }
+    }
+}
